@@ -1,0 +1,12 @@
+box: ubuntu:latest
+
+build:
+    steps:
+        - script:
+            name: prepare output
+            code: rm -rf $WERCKER_ROOT/.git
+
+    after-steps:
+        - bashaus/slack-notify:
+            webhook-url: $SLACK_WEBHOOK_URL
+            message-channel: wercker

@@ -1,0 +1,30 @@
+name: zip
+version: 0.0.1
+description: Zips a directory, excludes *.git* files by default
+keywords:
+  - zip
+
+properties:
+  store-symlinks:
+    type: bool
+    required: false
+    default: true
+
+  sources:
+    type: string
+    required: false
+    default: .
+
+  target-file:
+    type: string
+    required: false
+    default: $WERCKER_ROOT/$WERCKER_GIT_COMMIT.zip
+
+  opts:
+    type: string
+    required: false
+
+  quiet:
+    type: bool
+    required: false
+    default: true
