@@ -5,6 +5,9 @@ build:
         - script:
             name: prepare output
             code: rm -rf $WERCKER_ROOT/.git
+            
+        - internal/publish-step:
+            owner: bashaus
 
     after-steps:
         - bashaus/slack-notify:
