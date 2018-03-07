@@ -1,5 +1,5 @@
 name: zip
-version: 0.0.1
+version: 0.0.2
 summary: |
   Recursively compress files or directories into a ZIP archive, excludes GIT
   files by default.

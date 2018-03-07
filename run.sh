@@ -38,8 +38,6 @@ then
     apt-get install -y zip
 fi
 
-env
-
 # Task: ZIP
 # Compress and package the directory
 zip -r \
